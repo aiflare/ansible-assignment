@@ -1,0 +1,19 @@
+---
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    connection: local 
+    tasks:
+
+    - name: show json data 
+      uri:
+          url: "https://api.macaddress.io/v1?apiKey=at_UtZSWWafVHX7braa7bmWH4LeMAmmK&output=json&search=44:38:39:ff:ef:57"
+          method: GET
+          body_format: json
+          return_content: yes
+          headers:
+                  Content-Type: application/json
+      register:
+               output
+
+
+    - debug: var=output
