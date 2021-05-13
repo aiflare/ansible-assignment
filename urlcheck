@@ -1,0 +1,20 @@
+---
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    connection: local 
+    tasks:
+
+    - name: show json data 
+      uri:
+          url: "http://localhost:8080/api/v1/ping"
+          method: POST
+          body_format: json
+          return_content: yes
+          body: "{{ lookup('file','create_body.json') | to_json }}"
+          headers:
+                  Content-Type: application/json
+      register:
+               output
+
+
+    - debug: var=output
