@@ -19,4 +19,6 @@ Confirm the version of Ansible (must be >= 2.10):
       
  `urlcheck` is an ansible yaml formatted script, when run with above command and it would show below output
 
-![Ansible Playbook Output](https://github.com/aiflare/ansible-assignment/blob/master/AnsibleOutput.PNG?raw=true)
+![Ansible Playbook Output for microservice access](https://github.com/aiflare/ansible-assignment/blob/master/AnsibleOutput.PNG?raw=true)
+
+![Ansible Playbook Output for Mac Address Info](https://user-images.githubusercontent.com/71802799/118094239-1b809f00-b3ec-11eb-8638-b0dcd5a4ae9c.png)
